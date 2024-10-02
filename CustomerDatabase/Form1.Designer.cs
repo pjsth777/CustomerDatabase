@@ -1,4 +1,6 @@
-﻿namespace CustomerDatabase
+﻿using System.IO;
+
+namespace CustomerDatabase
 {
     partial class Form1
     {
@@ -45,7 +47,7 @@
             // ********************************************************************************************************
 
             this.Text = "Fleet Panda Loggin System";
-            this.Icon = new Icon("E:\\DOTNET projects\\CustomerDatabase\\CustomerDatabase\\Images\\fleetpanda.ico");
+            this.Icon = new Icon(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Images", "fleetpanda.ico"));
 
             // ********************************************************************************************************
 
